@@ -12,11 +12,11 @@ As a job seeker I have always been curious to learn about what skills an applica
 
 1️⃣ Do more skills get you better pay?
 
-2️⃣ What’s the salary for data jobs in different regions?
+2️⃣ What is the salary for data jobs in different regions?
 
 3️⃣ What are the top skills of data professionals?
 
-4️⃣ What’s the pay for the top 10 skills?
+4️⃣ What is the pay for the top 10 skills?
 
 ### What skills were used in the project?
 
@@ -91,7 +91,7 @@ Jobs Skills Query
 ![Screenshot 2025-01-19 193650](https://github.com/user-attachments/assets/c50e810f-3ceb-46af-b996-f275d3a5fa15)
 
 
-2️⃣ What’s the salary for data jobs in different regions?
+2️⃣ What is the salary for data jobs in different regions?
 
 🖥️ Skills: PivotTables & DAX
 Pivot Table
@@ -111,7 +111,7 @@ To calculate the median year salary I used DAX.
 
 📊 Analysis
 
-- The most in demand positions both in the US and internationally are Machine Learning Engineer, Senior Data Engineer, Senior Data Scientist marking
+- The most in demand positions both in the US and internationally are Machine Learning Engineer, Senior Data Engineer, Senior Data Scientist.
 - The difference in the Median Salaries between the US and other countries is evident especially in non-senior positions, indicating high demand and concentration of these jobs in the US.
 
 ![Screenshot 2025-01-19 221306](https://github.com/user-attachments/assets/06c88ab4-a14d-4786-aa69-a199d3a6833a)
@@ -119,12 +119,55 @@ To calculate the median year salary I used DAX.
 
 ![Screenshot 2025-01-19 221248](https://github.com/user-attachments/assets/d001d3d7-3c67-4d1c-b244-f32a09a764c5)
 
+Conclusion
+
+**These insights help professionals know their worth on their market and facilitate their salary negotiation process.**
 
 3️⃣ What are the top skills of data professionals?
 
 🔄 Skill: Power Pivot
 
-🔗 I created a data model by integrating the data_jobs_all and data_jobs_skills tables into one model.
-🧹 Since I had already cleaned the data using Power Query; Power Pivot created a relationship between these two tables.
+🔗 I created a data model by integrating the data_jobs_all and data_jobs_skills tables into one model and created a relationship between these two tables using the index column `job_id`.
 
 
+
+![Screenshot 2025-01-19 223749](https://github.com/user-attachments/assets/0f68d469-4be6-4aab-966f-84110ff63f3b)
+
+
+📊 Analysis
+
+- SQL, Python and Tableau are the most sought after skills in the Data world as it turns out.
+- Tableau ranks significantly higher than Power BI indicating shift in popularity of this visualization tool on the job market.
+
+  
+![Screenshot 2025-01-19 224747](https://github.com/user-attachments/assets/54d761c6-6b9d-4ad1-a458-b01176c2e863)
+
+Conclusion
+
+**This information is crucial for applicants to know if their skills align with the current market situation and help future professionals decide which skills are the most useful to learn in order to land a job.**
+
+4️⃣ What is the pay for the top 10 skills?
+
+📈 Skills: PivotChart
+
+
+I created a combo PivotChart to plot median salary and skill likelihood (%) from my PivotTable.
+
+
+🪙 Primary Axis: Median Salary (as a Clustered Column)
+
+
+👍 Secondary Axis: Skill Likelihood (as a Line with Markers)
+
+
+To customize the chart, I added a title axis title, removed the lines (skill likelihood), and changed the markers to diamonds.
+
+
+📊 Analysis
+
+💡 Higher median salaries are associated with skills like Python, Oracle, and SQL, suggesting their critical role in high-paying tech jobs.
+
+📉 Skills like PowerPoint and Word have the lowest median salaries and likelihood, indicating less specialization and demand in high-salary sectors.
+
+
+![Screenshot 2025-01-19 230301](https://github.com/user-attachments/assets/77abb436-2f86-4c9d-ae62-8c900f204d70)
