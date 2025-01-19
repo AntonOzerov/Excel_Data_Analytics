@@ -169,5 +169,9 @@ To customize the chart, I added a title axis title, removed the lines (skill lik
 
 📉 Skills like PowerPoint and Word have the lowest median salaries and likelihood, indicating less specialization and demand in high-salary sectors.
 
+![Screenshot 2025-01-19 232143](https://github.com/user-attachments/assets/547a5d43-da3f-49bc-b83e-36ac1ceae95b)
 
-![Screenshot 2025-01-19 230301](https://github.com/user-attachments/assets/77abb436-2f86-4c9d-ae62-8c900f204d70)
+
+Conclusion
+
+**This information is very useful to determine which skills to focus on to increase one's salary.**
