@@ -8,7 +8,7 @@ This dashboard was created to help jobseekers such as myself to better navigate 
 
 In order to use the dashboard one should simply select the desired position, country and type of employment and the data will be loaded automatically.
 
-This dashboard is available here: 
+This dashboard is available here: [Data_Jobs_Dashboard_Project](Data_Jobs_Dashboard_Project)
 
 
 ![Screenshot 2025-01-21 170829](https://github.com/user-attachments/assets/36ebf75a-b916-4c7e-b151-13ec12b5b801)
