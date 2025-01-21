@@ -90,6 +90,8 @@ In conclusion, this dashboard is a practical tool designed to help jobseekers be
 
 ## 2. Data Skills and Salary Relationshp Analysis
 
+This project is available here: [Data_Jobs_Salary_Project](Data_Jobs_Salary_Project)
+
 ## Introduction
 As a job seeker I have always been curious to learn about what skills an applicant is expected to have for a certain position and how valued these skills are in the job market around the world. This 2023 dataset that includes jobs and requirements for each job came in handy for such analysis. 
 
