@@ -2,6 +2,92 @@
 
 ## 1. Data Jobs Salaries Dashboard
 
+## Introduction
+
+This dashboard was created to help jobseekers such as myself to better navigate in the world of data labour market, be well informed on the median salaries, the most popular job search platform and the number of positions available in their line of work. The dashboard also compares salaries across different data positions and different types of employment. 
+
+In order to use the dashboard one should simply select the desired position, country and type of employment and the data will be loaded automatically.
+
+This dashboard is available here: 
+
+
+![Screenshot 2025-01-21 170829](https://github.com/user-attachments/assets/36ebf75a-b916-4c7e-b151-13ec12b5b801)
+
+
+### What skills were used in this project?
+
+📈Charts
+
+🧮 Formulas and Functions
+
+✔️ Data Validation
+
+### The Dataset
+
+
+👨‍💼Job title
+
+📍Job Location
+
+💡Job skills
+
+💸Job Salaries
+
+## Dashboard Build
+
+### 📈Charts
+
+### Data Jobs Salary Bar Chart
+
+- Used bar chart for better data jobs salaries representations and customized the salary values (e.g. $100K) for less obstructed overview
+- Created separate columns so that othe selected value would be highlighet on the chart
+
+![Screenshot 2025-01-21 173009](https://github.com/user-attachments/assets/de1ec6d2-6261-4bf8-8276-0d24b049961a)
+
+![Screenshot 2025-01-21 174815](https://github.com/user-attachments/assets/c3d1cd56-0e12-43d1-a2a7-19249791deec)
+
+### 🧮 Formulas and Functions
+
+### Median Salary by Job Title 
+`=MEDIAN(
+IF(
+    (jobs[job_title_short]=A2)*
+    (jobs[job_country]=country)*
+    (ISNUMBER(SEARCH(type,jobs[job_schedule_type])))*
+    (jobs[salary_year_avg]<>0),
+    jobs[salary_year_avg]
+)
+)`
+
+🔍 Multi-Criteria Filtering: Checks job title, country, schedule type, and excludes blank salaries.
+📊 Array Formula: Utilizes MEDIAN() function with nested IF() statement to analyze an array.
+🎯 Tailored Insights: Provides specific salary information for job titles, regions, and schedule types.
+🔢 Formula Purpose: This formula populates the table below, returning the median salary based on job title, country, and type specified.
+
+![Screenshot 2025-01-21 180150](https://github.com/user-attachments/assets/c7b03f1c-5e30-4c0d-b2b7-b70a049db5b3)
+
+### 📊Job Employment Type Bar Chart
+1. I filtered the job_type column by first excluding "and" from job types by locating "and" in each row - `=SEARCH("and",K2#)`
+2. Created a boolean column with TRUE and FALSE values to identify whether "and" is in each row or not `=ISNUMBER(M2#)`
+3. Filtered the column by using `=FILTER(K2#,NOT(N2#)*(K2#<>0))` excluded the TRUE values containing "and"
+
+![Screenshot 2025-01-21 183440](https://github.com/user-attachments/assets/1ed91501-1473-4ef0-83b1-7ac54d987b78)    
+
+### 📈Dashboard Implementation:
+![Screenshot 2025-01-21 180450](https://github.com/user-attachments/assets/7d9b7c05-71a1-4527-b4c4-b65b177ee4b8)
+
+✔️ Data Validation
+
+https://github.com/user-attachments/assets/50e9396e-de2f-41ea-b541-acd418f90212
+
+
+
+https://github.com/user-attachments/assets/ca920292-36bc-4d16-bee2-d15f3de3fa5f
+
+### Conclusion
+
+In conclusion, this dashboard is a practical tool designed to help jobseekers better understand the data job market. It provides essential information about median salaries, highlights popular job search platforms, and shows the availability of positions in different areas. Additionally, it compares salaries across various data roles and types of employment, giving users the knowledge they need to make well-informed career choices.
+
 ## 2. Data Skills and Salary Relationshp Analysis
 
 ## Introduction
